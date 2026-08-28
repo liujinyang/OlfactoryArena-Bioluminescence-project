@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<olfactoryArena>
+    <note_behavioral>
+        <content appear_advanced="true" appear_basic="true"
+            datatype="string" default=""
+            description="An open field area for the experimenter to write observations about fly behavior from the start of the experiment."
+            entry="manual" last="" range_advanced="" range_basic=""
+            required="false" units=""/>
+    </note_behavioral>
+    <note_technical>
+        <content appear_advanced="true" appear_basic="true"
+            datatype="string" default=""
+            description="An open field area for the experimenter to write observations about experimental equipment/conditions at the start of the experiment."
+            entry="manual" last="" range_advanced="" range_basic=""
+            required="false" units=""/>
+    </note_technical>
+</olfactoryArena>

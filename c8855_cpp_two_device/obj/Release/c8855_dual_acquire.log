@@ -1,0 +1,6 @@
+﻿  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 758 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  c8855_dual_acquire.vcxproj -> C:\Users\labadmin\Documents\MATLAB\BioLuminescenceRIg\c8855_cpp_two_device\bin\Release\c8855_dual_acquire.exe

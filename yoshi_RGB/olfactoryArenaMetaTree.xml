@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<olfactoryArena>
+    <assay appear_advanced="true" appear_basic="true, readonly"
+        datatype="string" default="$LAST" description="Name of assay"
+        entry="manual" last="DeepMind2" range_advanced="" range_basic=""
+        required="true" units=""/>
+    <experimenter appear_advanced="true" appear_basic="true"
+        datatype="string" default="$LAST"
+        description="Name of the person who is running the experiment."
+        entry="manual" last="Yoshi" range_advanced="Yoshi, Jasper"
+        range_basic="Yoshi, Jasper" required="true" units=""/>
+    <exp_datetime appear_advanced="false" appear_basic="false"
+        datatype="datetime" default=""
+        description="Date and time at which the experiment was started."
+        entry="acquire" last="" range_advanced="" range_basic=""
+        required="true" units=""/>
+    <apparatus>
+        <room appear_advanced="true, readonly"
+            appear_basic="true, readonly" datatype="string"
+            default="$LAST" description="Room number" entry="manual"
+            last="3E.288" range_advanced="" range_basic=""
+            required="true" units=""/>
+    </apparatus>
+    <flies>
+        <male_parent appear_advanced="true" appear_basic="true"
+            datatype="string" default="$LAST"
+            description="Verified as legal male parent name in SAGE."
+            entry="manual" last="test" range_advanced="$FLYPARENT"
+            range_basic="$FLYPARENT" required="true" units=""/>
+        <female_parent appear_advanced="true"
+            appear_basic="true, readonly" datatype="string"
+            default="$LAST"
+            description="Verified as legal female parent name in SAGE."
+            entry="manual" last="test" range_advanced="$FLYPARENT"
+            range_basic="$FLYPARENT" required="true" units=""/>
+        <genotype>
+            <content appear_advanced="true" appear_basic="true"
+                datatype="string" default="$LAST"
+                description="Genotype of flies. Typically auto-generated from male parent and female parent."
+                entry="manual" last="" range_advanced="" range_basic=""
+                required="true" units=""/>
+        </genotype>
+        <flip_used appear_advanced="true" appear_basic="true"
+            datatype="string" default="$LAST"
+            description="How many times the flies were flipped."
+            entry="manual" last="0" range_advanced="0,1,2,3"
+            range_basic="0,1,2,3" required="true" units=""/>
+        <gender appear_advanced="true" appear_basic="true, readonly"
+            datatype="string" default="$LAST"
+            description="The gender or genders of the flies. m=male, f=female, b=both, x=unknown"
+            entry="manual" last="f" range_advanced="m,f,b,x"
+            range_basic="m,f,b,x" required="true" units=""/>
+        <cross_date appear_advanced="true" appear_basic="true"
+            datatype="datetime" default="$LAST"
+            description="Date cross was made to generate this set of flies."
+            entry="manual" last="20260729T000000"
+            range_advanced="[now-35,now-20], days"
+            range_basic="[now-35,now-20], days" required="true" units=""/>
+        <num_flies appear_advanced="true" appear_basic="true"
+            datatype="integer" default="$LAST"
+            description="Number of flies actually put into apparatus for this experiment; may be different from protocol number of flies intended for the experiment."
+            entry="manual" last="16" range_advanced="[11,30]"
+            range_basic="[11,30]" required="true" units="flies"/>
+        <rearing>
+            <incubator appear_advanced="true" appear_basic="true"
+                datatype="string" default="$LAST"
+                description="ID number for incubator flies were raised in."
+                entry="manual" last="O"
+                range_advanced="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
+                range_basic="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
+                required="true" units=""/>
+        </rearing>
+        <handling>
+            <handler_cross appear_advanced="true" appear_basic="true"
+                datatype="string" default="$LAST"
+                description="Name of the person who handled the fly crossing."
+                entry="manual" last="Yoshi"
+                range_advanced="Ming, Billy, Teri, Yoshi"
+                range_basic="Ming, Billy, Teri, Yoshi" required="true" units=""/>
+            <handler_sorting appear_advanced="true" appear_basic="true"
+                datatype="string" default="$LAST"
+                description="Name of the person who handled the fly sorting."
+                entry="manual" last="Yoshi"
+                range_advanced="Ming, Billy, Teri, Yoshi"
+                range_basic="Ming, Billy, Teri, Yoshi" required="true" units=""/>
+            <datetime_sorted appear_advanced="true" appear_basic="true"
+                datatype="datetime" default="$LAST"
+                description="Date at the flies were sorted."
+                entry="manual" last="20260729T000000"
+                range_advanced="[now-35,now-20], days"
+                range_basic="[now-35,now-20], days" required="true" units=""/>
+            <cross_food appear_advanced="true" appear_basic="true"
+                datatype="string" default="$LAST"
+                description="cross food" entry="manual" last="1_500"
+                range_advanced="0,1_1000,1_500,1_250"
+                range_basic="0,1_1000,1_500,1_250" required="true" units=""/>
+            <sort_food appear_advanced="true" appear_basic="true"
+                datatype="string" default="$LAST"
+                description="sort food" entry="manual" last="1_250"
+                range_advanced="0,1_1000,1_500,1_250"
+                range_basic="0,1_1000,1_500,1_250" required="true" units=""/>
+        </handling>
+    </flies>
+    <environment>
+        <IR_intensity appear_advanced="true" appear_basic="true"
+            datatype="integer" default="$LAST"
+            description="IR intensity" entry="manual" last="0"
+            range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units=""/>
+        <LED_intensity_scale appear_advanced="true" appear_basic="true"
+            datatype="string" default="$LAST"
+            description="LED intensity scale" entry="manual"
+            last="LINEAR" range_advanced="LINEAR, LOG"
+            range_basic="LINEAR, LOG" required="true" units=""/>
+        <temperature appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature snapshot at the time the assay was started."
+            entry="acquire" last="22.5" range_advanced="[-Inf, Inf]"
+            range_basic="[-Inf, Inf]" required="true" units="degrees Celsius"/>
+        <humidity appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Humidity snapshot at the time the assay was started."
+            entry="acquire" last="46.6" range_advanced="[0,100]"
+            range_basic="[0,100]" required="true" units="percent"/>
+        <MFC1_temp appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature of the MFC 1." entry="acquire"
+            last="24.12" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="Celsus degree"/>
+        <MFC1_massFlow appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Mass flow rate of the MFC 1." entry="acquire"
+            last="19.5" range_advanced="[-10,1000]"
+            range_basic="[-10,1000]" required="true" units="SCCM"/>
+        <MFC1_pressure appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Pressure of the MFC 1." entry="acquire"
+            last="15.055" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="PSIA"/>
+        <MFC2_temp appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature of the MFC 2." entry="acquire"
+            last="23.6" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="Celsus degree"/>
+        <MFC2_massFlow appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Mass flow rate of the MFC 2." entry="acquire"
+            last="200.2" range_advanced="[-10,1000]"
+            range_basic="[-10,1000]" required="true" units="SCCM"/>
+        <MFC2_pressure appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Pressure of the MFC 2." entry="acquire"
+            last="15.125" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="PSIA"/>
+        <MFC3_temp appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature of the MFC 3." entry="acquire"
+            last="" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="Celsus degree"/>
+        <MFC3_massFlow appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Mass flow rate of the MFC 3." entry="acquire"
+            last="" range_advanced="[-1,1000]" range_basic="[-1,1000]"
+            required="true" units="SCCM"/>
+        <MFC3_pressure appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Pressure of the MFC 3." entry="acquire" last=""
+            range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="PSIA"/>
+        <MFC4_temp appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature of the MFC 4." entry="acquire"
+            last="" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="Celsus degree"/>
+        <MFC4_massFlow appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Mass flow rate of the MFC 4." entry="acquire"
+            last="" range_advanced="[-1,1000]" range_basic="[-1,1000]"
+            required="true" units="SCCM"/>
+        <MFC4_pressure appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Pressure of the MFC 4." entry="acquire" last=""
+            range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="PSIA"/>
+        <MFC5_temp appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature of the MFC 5." entry="acquire"
+            last="" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="Celsus degree"/>
+        <MFC5_massFlow appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Mass flow rate of the MFC 5." entry="acquire"
+            last="" range_advanced="[-1,1000]" range_basic="[-1,1000]"
+            required="true" units="SCCM"/>
+        <MFC5_pressure appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Pressure of the MFC 5." entry="acquire" last=""
+            range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="PSIA"/>
+        <MFC6_temp appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature of the MFC 6." entry="acquire"
+            last="" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="Celsus degree"/>
+        <MFC6_massFlow appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Mass flow rate of the MFC 6." entry="acquire"
+            last="" range_advanced="[-1,1000]" range_basic="[-1,1000]"
+            required="true" units="SCCM"/>
+        <MFC6_pressure appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Pressure of the MFC 6." entry="acquire" last=""
+            range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="PSIA"/>
+        <MFC7_temp appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature of the MFC 7." entry="acquire"
+            last="" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="Celsus degree"/>
+        <MFC7_massFlow appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Mass flow rate of the MFC 7." entry="acquire"
+            last="" range_advanced="[-1,1000]" range_basic="[-1,1000]"
+            required="true" units="SCCM"/>
+        <MFC7_pressure appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Pressure of the MFC 7." entry="acquire" last=""
+            range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="PSIA"/>
+        <MFC8_temp appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Temperature of the MFC 8." entry="acquire"
+            last="" range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="Celsus degree"/>
+        <MFC8_massFlow appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Mass flow rate of the MFC 8." entry="acquire"
+            last="" range_advanced="[-1,1000]" range_basic="[-1,1000]"
+            required="true" units="SCCM"/>
+        <MFC8_pressure appear_advanced="true" appear_basic="true"
+            datatype="float" default=""
+            description="Pressure of the MFC 8." entry="acquire" last=""
+            range_advanced="[0,100]" range_basic="[0,100]"
+            required="true" units="PSIA"/>
+    </environment>
+</olfactoryArena>
