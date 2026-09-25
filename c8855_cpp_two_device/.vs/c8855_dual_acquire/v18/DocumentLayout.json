@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\labadmin\\Documents\\MATLAB\\BioLuminescenceRIg\\c8855_cpp_two_device\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A889C19-5C65-4E87-85D9-F68D8D2873C4}|c8855_dual_acquire.vcxproj|C:\\Users\\labadmin\\Documents\\MATLAB\\BioLuminescenceRIg\\c8855_cpp_two_device\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9A889C19-5C65-4E87-85D9-F68D8D2873C4}|c8855_dual_acquire.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\labadmin\\Documents\\MATLAB\\BioLuminescenceRIg\\c8855_cpp_two_device\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\labadmin\\Documents\\MATLAB\\BioLuminescenceRIg\\c8855_cpp_two_device\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAJAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-07-02T23:04:42.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

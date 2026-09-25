@@ -6,7 +6,7 @@ devNum_odorC1 = 'Dev1';
 % %PID JCS 8/26/2021
 % devNum_PID1 = 'dev2';
 serial_port_for_MFC1 = 'COM8';
-serial_port_for_MFC2 = 'COM6';
+serial_port_for_MFC2 = 'COM7';
 
 rigName = 'olfactoryArena1';
 
